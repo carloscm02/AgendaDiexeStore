@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    height: 100vh;
+    background: #e8e8e8;
+}
+
+.title{
+    padding: 10px;
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-style: italic;
+}
+
+main{
+    display: flex;
+}
+
+article{
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 30px;
+}
+
+aside{
+    width: 50%;
+    row-gap: 500px;
+}
+
+
+
+

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Agenda</title>
+    <script src="https://unpkg.com/dexie@latest/dist/dexie.js"></script>
+
+    <link rel="icon" type="image/x-icon" href="assets/media/cuaderno.png">
+
+    <link rel="stylesheet" href="assets/styles/stilo.css" />
+    <link rel="stylesheet" href="assets/styles/cards.css" />
+    <link rel="stylesheet" href="assets/styles/aside.css" />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap");
+    </style>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital@0;1&display=swap");
+    </style>
+  </head>
+  <body>
+    <h1 class="title">Mi agenda de contactos</h1>
+
+    <main>
+      <article id="list">
+        <div class="card skeleton">
+          <div class="img skeleton"></div>
+              <div class="flex">
+                  <button class="skeleton"></button>
+                  <button class="skeleton"></button>
+              </div>
+        </div>
+        <div class="card skeleton">
+          <div class="img skeleton"></div>
+              <div class="flex">
+                  <button class="skeleton"></button>
+                  <button class="skeleton"></button>
+              </div>
+        </div>
+        <div class="card skeleton">
+          <div class="img skeleton"></div>
+              <div class="flex">
+                  <button class="skeleton"></button>
+                  <button class="skeleton"></button>
+              </div>
+        </div>
+        <div class="card skeleton">
+          <div class="img skeleton"></div>
+              <div class="flex">
+                  <button class="skeleton"></button>
+                  <button class="skeleton"></button>
+              </div>
+        </div>
+        <div class="card skeleton">
+          <div class="img skeleton"></div>
+              <div class="flex">
+                  <button class="skeleton"></button>
+                  <button class="skeleton"></button>
+              </div>
+        </div>
+        <div class="card skeleton">
+          <div class="img skeleton"></div>
+              <div class="flex">
+                  <button class="skeleton"></button>
+                  <button class="skeleton"></button>
+              </div>
+        </div>
+      </article>
+
+      <aside>
+        <div class="stiky">
+          <section id="addSection">
+            <div class="section">
+              <div>
+                <label for="name" class="statement text-aside">Nombre</label>
+                <input type="text" id="name" />
+              </div>
+              <div>
+                <label for="surname" class="statement text-aside"
+                  >Apellido</label
+                >
+                <input type="text" name="apellido" id="surname" />
+              </div>
+              <div>
+                <span class="statement text-aside">Telefono</span>
+                <input type="button" name="telefono" id="morePhone" value="+" />
+              </div>
+              <div>
+                <label for="birthAt" class="statement text-aside"
+                  >Fecha de nacimiento</label
+                >
+                <input type="date" name="fecha" id="birthAt" />
+              </div>
+              <div>
+                <label for="photo" class="statement text-aside">Foto</label>
+                <input type="url" name="foto" id="photo" />
+              </div>
+              <div>
+                <button id="add" class="add-image"></button>
+              </div>
+            </div>
+          </section>
+
+          <section id="updateSection">
+            <div class="section">
+              <div>
+                <label class="statement text-aside" for="UpdateName">Nombre</label>
+                <input type="text" name="nombre" id="UpdateName" />
+              </div>
+              <div>
+                <label class="statement text-aside" for="updateSurname">Apellido</label>
+                <input type="text" name="apellido" id="updateSurname" />
+              </div>
+              <div>
+              <span class="statement text-aside">Telefono</span>
+              <input type="button" id="updateMorePhone" value="+" disabled/>
+              </div>
+              <div>
+                <label class="statement text-aside" for="updateBirthAt">Fecha de nacimiento</label>
+                <input type="date" name="fecha" id="updateBirthAt" />
+              </div>
+              <div>
+                <label class="statement text-aside" for="updatePhoto">Foto</label>
+                <input type="text" name="foto" id="updatePhoto" />
+              </div>
+                <div>
+              <button id="update" disabled class="setting-image"></button>
+                    </div>
+            </div>
+          </section>
+        </div>
+      </aside>
+    </main>
+  </body>
+  <script type="module" src="./app.ts"></script>
+  <script
+    src="https://kit.fontawesome.com/e929df1d66.js"
+    crossorigin="anonymous"
+  ></script>
+</html>

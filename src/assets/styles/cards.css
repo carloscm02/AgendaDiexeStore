@@ -1,0 +1,130 @@
+.card{
+    flex-direction: column;
+    width: 300px;
+    height: 450px;
+    background-color: rgb(169, 70, 70);
+}
+
+.card {
+    display: flex;
+    transition: all 0.2s ease-in;
+    position: relative;
+    overflow: hidden;
+    color: #090909;
+    padding: 0.7em 1.7em;
+    border-radius: 1em;
+    background: #e8e8e8;
+    border: 1px solid #e8e8e8;
+    box-shadow: 6px 6px 12px #c5c5c5,
+               -6px -6px 12px #ffffff;
+            }
+            
+  .card:hover {
+    border: 1px solid #3b9a77;
+    scale: 1.01;
+  }
+  
+
+  img{
+    width: 230px;
+    height: 230px;
+    object-fit: cover;
+    margin: auto;
+    border: 1px solid #e8e8e8;
+    border-radius: 0.5em;
+    box-shadow: 6px 6px 12px #c5c5c5;
+}
+
+.statement{
+    font-family: 'Playfair Display';
+    margin: auto;
+    margin-left: 20px;
+    font-size: large;
+}
+
+.info{
+    font-family: 'Playfair Display';
+    font-size: large;
+}
+
+.phone-list{
+    height: 50px;
+    overflow-y: scroll;
+}
+
+.edit-image{
+    background-image:url(../media/edit.png);
+    background-size: 100%;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    box-shadow: 6px 6px 12px #c5c5c5;
+  }
+
+  .delete-image{
+      background-image:url(../media/delete-user.png);
+      background-size: 100%;
+      height: 50px;
+      width: 50px;
+    border-radius: 100%;
+    box-shadow: 6px 6px 12px #c5c5c5;
+    }
+
+    .edit-image:hover{
+        transition: 1s;
+        border: 2px solid #ffffff;
+        background-color: #b8fa89;
+        box-shadow: 6px 6px 12px #89edfa;
+    }
+
+    .delete-image:hover{
+        transition: 1s;
+        border: 2px solid #ffffff;
+        background-color: #fa9289;
+        box-shadow: 6px 6px 12px #2f0000;
+
+    }
+    
+
+.flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+/*skeleton efect*/
+.skeleton{
+    box-shadow: none;
+    animation: skeleton-loading 500ms ease-in-out infinite alternate;
+}
+
+
+@keyframes skeleton-loading{
+    0%{
+        background-color: hsl(216.92 15.29% 83.33% / 0.40);
+    }
+    100%{
+        background-color: hsl(210 13.79% 88.63% / 0.30);
+    }
+}
+
+.img.skeleton{
+    border-radius: none;
+    width: 230px;
+    height: 230px;
+    margin: auto;
+}
+
+button.skeleton{
+    border: none;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    margin: 0.5em;
+    animation: skeleton-loading 500ms ease-in-out infinite alternate;
+}
+
+.card.skeleton{
+    border: none;
+}

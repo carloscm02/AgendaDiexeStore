@@ -1,0 +1,36 @@
+{
+  "contacts": [
+    {
+      "id": "62a9c5dd-dcc6-4376-9f8e-79d9fb74aa48",
+      "_name": "a",
+      "_surname": "",
+      "_phones": [],
+      "_birthAt": "",
+      "_photo": ""
+    },
+    {
+      "id": "fdbdffe3-deb5-410c-840a-d4708f5e44ec",
+      "_name": "",
+      "_surname": "",
+      "_phones": [],
+      "_birthAt": "",
+      "_photo": ""
+    },
+    {
+      "id": "36be0164-b3b1-4518-aa5f-0fd23dc22db5",
+      "_name": "",
+      "_surname": "",
+      "_phones": [],
+      "_birthAt": "",
+      "_photo": ""
+    },
+    {
+      "id": "0bfd0c8c-2bc7-4759-8392-0347b2024670",
+      "_name": "",
+      "_surname": "",
+      "_phones": [],
+      "_birthAt": "",
+      "_photo": ""
+    }
+  ]
+}
